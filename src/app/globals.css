@@ -3,20 +3,26 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --color-honey-light: #F7D58D;
+  --color-honey: #F1AA46;
+  --color-cream: #FFF6D9;
+  --color-gold: #E4B44E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+  --font-montserrat: var(--font-montserrat);
+  --font-ethnocentric: var(--font-ethnocentric);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-honey-light: var(--color-honey-light);
+  --color-honey: var(--color-honey);
+  --color-cream: var(--color-cream);
+  --color-gold: var(--color-gold);
 }
 
 body {
