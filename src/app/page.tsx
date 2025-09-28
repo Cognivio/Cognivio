@@ -1,4 +1,5 @@
 import Hero from "./hero";
+import Mission from "./mission";
 import Navbar from "./navbar";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-col">
         <Hero />
+        <Mission />
       </main>
     </div>
   );
