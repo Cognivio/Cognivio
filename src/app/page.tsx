@@ -1,4 +1,5 @@
 import Competition from "./competition";
+import Footer from "./footer";
 import Hero from "./hero";
 import Mission from "./mission";
 import Navbar from "./navbar";
@@ -12,6 +13,8 @@ export default function Home() {
         <Mission />
         <Competition />
       </main>
+
+      <Footer />
     </div>
   );
 }
