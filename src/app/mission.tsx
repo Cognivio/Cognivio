@@ -4,10 +4,10 @@ export default function Mission() {
     return (
         <div className="flex flex-col justify-between bg-cream min-h-screen h-screen w-screen px-12 py-24 relative overflow-hidden">
             {/* Title */}
-            <h2 className="font-bold text-3xl text-center text-gray-900">Our Mission</h2>
+            <h2 className="font-bold text-3xl text-center text-gray-900 z-20">Our Mission</h2>
 
             {/* Background decoration */}
-            <div className="absolute flex items-center justify-center pointer-events-none -left-40 top-20 -z-10">
+            <div className="absolute flex items-center justify-center pointer-events-none -left-40 top-20 z-0">
                 <Image
                     src="/decoration/circle-triangle.png"
                     alt="Circle triangle decoration"
@@ -18,7 +18,7 @@ export default function Mission() {
             </div>
 
             {/* Content */}
-            <div className="flex flex-col gap-4 z-10 w-fit absolute bottom-20 right-6 mb-4 mr-4">
+            <div className="flex flex-col gap-4 z-10 w-fit absolute bottom-20 right-6 mb-4 mr-4 z-10">
                 {[
                     "Mission 1",
                     "Mission 2", 
