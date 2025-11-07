@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   title: "Cognivio",
   description: "Cognivio homepage",
   icons: {
-    icon: '/brand/cognivio-eagle.svg',
-    shortcut: '/brand/cognivio-eagle.svg',
-    apple: '/brand/cognivio-eagle.svg'
+    icon: '/favicon.ico',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png'
   }
 };
 
