@@ -1,4 +1,4 @@
-import WorkCard from "./components/work-card";
+import WorkCard from "../ui/WorkCard";
 
 export default function Hero() {
   return (
