@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
-import "./globals.css";
+import "@assets/css/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 const ethnocentric = localFont({
   src: [
     {
-      path: './ethnocentric.otf',
+      path: '../assets/fonts/ethnocentric.otf',
       weight: '400',
       style: 'normal',
     },
@@ -24,12 +24,6 @@ const ethnocentric = localFont({
   variable: '--font-ethnocentric',
   display: 'swap',
 });
-
-const montserrat  = Montserrat({
-  variable: '--font-montserrat',
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700']
-})
 
 export const metadata: Metadata = {
   title: "Cognivio",
