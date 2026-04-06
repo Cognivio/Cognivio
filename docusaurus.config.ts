@@ -32,7 +32,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'id'],
   },
 
   presets: [
@@ -77,7 +77,32 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
+        {
+          type: 'dropdown',
+          label: 'Services',
+          position: 'left',
+          items: [
+            { label: 'Data Solutions', to: '/services/data' },
+            { label: 'AI Integration', to: '/services/ai' },
+            { label: 'Consulting', to: '/services/consulting' },
+          ],
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'Company',
+          position: 'left',
+          items: [
+            { label: 'About us', to: '/about' },
+            { label: 'Careers', to: '/careers' },
+            { label: 'Contact us', to: '/contact' },
+            { label: 'Partnership', to: '/partnership' },
+          ]
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
     footer: {
