@@ -1,25 +1,28 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
+farrel:
+  name: Farrel Augusta Dinata
+  title: Cognivio Founder
+  url: https://farrelad.github.io
+  image_url: https://github.com/FarrelAD.png
   page: true
   socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
+    linkedin: farrelad
+    github: FarrelAD
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+cakra:
+  name: Cakra Wangsa May Ahmad Widodo
+  title: Cognivio Founder
+  image_url: https://github.com/MiracleCakra.png
+  page: true
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    linkedin: cakra-wangsa-may-ahmad-widodo-08753b330
+    github: MiracleCakra
+
+vidi:
+  name: Vidi Joshubzky Saviola
+  title: Cognivio Founder
+  url: https://www.vjs-labs.tech/
+  image_url: https://github.com/TMTMPST.png
+  page: true
+  socials:
+    linkedin: vidi-joshubzky-saviola
+    github: TMTMPST

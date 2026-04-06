@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+ai:
+  label: Artificial Intelligence
+  permalink: /ai
+  description: Articles about AI and machine learning applications
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+data-analytics:
+  label: Data Analytics
+  permalink: /data-analytics
+  description: Deep dives into data analytics, visualization, and business intelligence
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+cognitive-vision:
+  label: Cognitive Vision
+  permalink: /cognitive-vision
+  description: Computer vision, image recognition, and visual AI solutions
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+digital-strategy:
+  label: Digital Strategy
+  permalink: /digital-strategy
+  description: Insights on building and executing data-driven digital strategies
+
+business-intelligence:
+  label: Business Intelligence
+  permalink: /business-intelligence
+  description: Transforming raw data into actionable business insights

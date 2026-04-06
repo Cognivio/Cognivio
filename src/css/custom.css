@@ -1,5 +1,6 @@
 @import "tailwindcss/theme" layer(theme);
 @import "tailwindcss/utilities" layer(utilities);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;700&display=swap');
 
 /**
  * Any CSS included here will be global. The classic template
@@ -50,7 +51,6 @@
   color: #E5B351;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;700&display=swap');
 
 :root {
   --ifm-font-family-base: 'Inter', sans-serif;
