@@ -1,0 +1,50 @@
+{
+  "title": {
+    "message": "Cognivio",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo Cognivio",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Services": {
+    "message": "Layanan",
+    "description": "Navbar item with label Services"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Company": {
+    "message": "Perusahaan",
+    "description": "Navbar item with label Company"
+  },
+  "item.label.Data Solutions": {
+    "message": "Solusi Data",
+    "description": "Navbar item with label Data Solutions"
+  },
+  "item.label.AI Integration": {
+    "message": "Integrasi AI",
+    "description": "Navbar item with label AI Integration"
+  },
+  "item.label.Consulting": {
+    "message": "Konsultasi",
+    "description": "Navbar item with label Consulting"
+  },
+  "item.label.About us": {
+    "message": "Tentang Kami",
+    "description": "Navbar item with label About us"
+  },
+  "item.label.Careers": {
+    "message": "Karir",
+    "description": "Navbar item with label Careers"
+  },
+  "item.label.Contact us": {
+    "message": "Hubungi Kami",
+    "description": "Navbar item with label Contact us"
+  },
+  "item.label.Partnership": {
+    "message": "Kemitraan",
+    "description": "Navbar item with label Partnership"
+  }
+}

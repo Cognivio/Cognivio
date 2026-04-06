@@ -1,6 +1,6 @@
 import React, {type ReactNode} from 'react';
 import clsx from 'clsx';
-
+import Translate, {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {
   PageMetadata,
@@ -42,21 +42,24 @@ function BlogListPageContent({metadata, items}: Props): ReactNode {
   return (
     <Layout title={metadata.blogTitle} description={metadata.blogDescription}>
       <main className="bg-white text-slate-900 pb-24 overflow-x-hidden pt-24 font-['Inter']">
-        {/* Abstract Floating Tags (Background Element) */}
+        {/* Abstract Floating Tags — English terms kept per design decision */}
         <div className="absolute inset-x-0 top-0 overflow-hidden h-[600px] pointer-events-none">
           <div className="absolute -left-10 top-40 w-32 h-32 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "0s"}}>AI Tool</div>
-          <div className="absolute left-1/4 top-72 w-28 h-28 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "2s"}}>Technology</div>
-          <div className="absolute left-10 top-[400px] w-24 h-24 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "1s"}}>Foods</div>
+          <div className="absolute left-1/4 top-72 w-28 h-28 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "2s"}}>Data Analytics</div>
+          <div className="absolute left-10 top-[400px] w-24 h-24 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "1s"}}>Strategy</div>
           
-          <div className="absolute right-10 top-32 w-20 h-20 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "1.5s"}}>Play</div>
+          <div className="absolute right-10 top-32 w-20 h-20 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "1.5s"}}>Vision AI</div>
           <div className="absolute right-1/4 top-60 w-32 h-32 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "0.5s"}}>Intelligence</div>
-          <div className="absolute right-20 top-96 w-24 h-24 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "2.5s"}}>Lifestyle</div>
+          <div className="absolute right-20 top-96 w-24 h-24 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "2.5s"}}>Insights</div>
         </div>
 
         {/* Hero Area */}
         <section className="relative text-center mx-auto max-w-4xl px-6 pt-16 pb-20 hero-gradient rounded-3xl z-10 mb-20">
             <h1 className="heading-font text-5xl md:text-7xl font-bold tracking-tight text-slate-900">
-              Discover Latest<br/> <span className="brand-gold italic">Articles</span>
+              <Translate id="blogList.hero.title.line1">Discover Latest</Translate>
+              <br/> <span className="brand-gold italic">
+                <Translate id="blogList.hero.title.line2">Articles</Translate>
+              </span>
             </h1>
         </section>
 
@@ -107,7 +110,7 @@ function BlogListPageContent({metadata, items}: Props): ReactNode {
                 </div>
                 <div>
                   <a href={featuredPost.content.metadata.permalink} className="inline-block px-8 py-4 bg-slate-900 text-white rounded-full font-bold hover:bg-[#E5B351] transition-all hover:-translate-y-1">
-                    Read more &rarr;
+                    <Translate id="blogList.readMore">Read more</Translate> &rarr;
                   </a>
                 </div>
               </div>
@@ -162,7 +165,7 @@ function BlogListPageContent({metadata, items}: Props): ReactNode {
                         </span>
                       </div>
                       <a href={post.content.metadata.permalink} className="inline-flex items-center gap-2 px-6 py-2.5 bg-white border border-slate-200 text-slate-800 rounded-full text-sm font-bold hover:border-[#E5B351] hover:text-[#E5B351] transition-all">
-                        Read more <span aria-hidden="true">&rarr;</span>
+                        <Translate id="blogList.readMore">Read more</Translate> <span aria-hidden="true">&rarr;</span>
                       </a>
                     </div>
                   </div>
