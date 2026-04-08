@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Blog",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Blog Cognivio – Wawasan seputar AI, Analitik Data, dan Strategi Digital",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Artikel Terbaru",
+    "description": "The label for the left sidebar"
+  }
+}

@@ -1,0 +1,103 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;700&display=swap');
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #E5B351;
+  --ifm-color-primary-dark: #dfa330;
+  --ifm-color-primary-darker: #d39a2d;
+  --ifm-color-primary-darkest: #ae7f25;
+  --ifm-color-primary-light: #e8c06f;
+  --ifm-color-primary-lighter: #eac67e;
+  --ifm-color-primary-lightest: #efdaa9;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #f2ce8a;
+  --ifm-color-primary-dark: #efb95a;
+  --ifm-color-primary-darker: #eeb041;
+  --ifm-color-primary-darkest: #ebb31f;
+  --ifm-color-primary-light: #f5deaa;
+  --ifm-color-primary-lighter: #f7e6ba;
+  --ifm-color-primary-lightest: #faf3d8;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Navbar Styles */
+.navbar {
+  margin: 1rem auto;
+  width: 95%;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  top: 1rem; /* Adjust stickiness position */
+  transition: all 0.3s ease;
+}
+
+.navbar__title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  color: #E5B351;
+}
+
+
+:root {
+  --ifm-font-family-base: 'Inter', sans-serif;
+}
+
+.heading-font {
+    font-family: 'Outfit', sans-serif;
+}
+.brand-gold { color: #E5B351; }
+.bg-brand-gold { background-color: #E5B351; }
+.brand-grey { color: #D1D1D1; }
+
+.hero-gradient {
+    background: radial-gradient(circle at 70% 30%, rgba(229, 179, 81, 0.08) 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(229, 179, 81, 0.15);
+    transition: all 0.3s ease;
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(229, 179, 81, 0.5);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+[data-theme='dark'] .navbar {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 996px) {
+  .navbar {
+    width: 95%;
+    margin: 1rem auto;
+    border-radius: 12px;
+    top: 1rem;
+  }
+}

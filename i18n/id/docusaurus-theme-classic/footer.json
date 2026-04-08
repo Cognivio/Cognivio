@@ -1,0 +1,58 @@
+{
+  "link.title.Social Media": {
+    "message": "Media Sosial",
+    "description": "The title of the footer links column with title=Social Media in the footer"
+  },
+  "link.title.Resources": {
+    "message": "Sumber Daya",
+    "description": "The title of the footer links column with title=Resources in the footer"
+  },
+  "link.title.Company": {
+    "message": "Perusahaan",
+    "description": "The title of the footer links column with title=Company in the footer"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Cognivio"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://linkedin.com/company/cognivio-lab"
+  },
+  "link.item.label.Medium": {
+    "message": "Medium",
+    "description": "The label of footer link with label=Medium linking to https://medium.com/@cognivio.lab"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Products": {
+    "message": "Produk",
+    "description": "The label of footer link with label=Products linking to /products"
+  },
+  "link.item.label.Services": {
+    "message": "Layanan",
+    "description": "The label of footer link with label=Services linking to /services"
+  },
+  "link.item.label.About us": {
+    "message": "Tentang Kami",
+    "description": "The label of footer link with label=About us linking to /about"
+  },
+  "link.item.label.Contact us": {
+    "message": "Hubungi Kami",
+    "description": "The label of footer link with label=Contact us linking to /contact"
+  },
+  "link.item.label.Careers": {
+    "message": "Karir",
+    "description": "The label of footer link with label=Careers linking to /careers"
+  },
+  "link.item.label.Partnership": {
+    "message": "Kemitraan",
+    "description": "The label of footer link with label=Partnership linking to /partnership"
+  },
+  "copyright": {
+    "message": "Hak Cipta © 2026 Cognivio. Seluruh hak dilindungi.",
+    "description": "The footer copyright"
+  }
+}

@@ -1,0 +1,24 @@
+ai:
+  label: Artificial Intelligence
+  permalink: /ai
+  description: Articles about AI and machine learning applications
+
+data-analytics:
+  label: Data Analytics
+  permalink: /data-analytics
+  description: Deep dives into data analytics, visualization, and business intelligence
+
+cognitive-vision:
+  label: Cognitive Vision
+  permalink: /cognitive-vision
+  description: Computer vision, image recognition, and visual AI solutions
+
+digital-strategy:
+  label: Digital Strategy
+  permalink: /digital-strategy
+  description: Insights on building and executing data-driven digital strategies
+
+business-intelligence:
+  label: Business Intelligence
+  permalink: /business-intelligence
+  description: Transforming raw data into actionable business insights

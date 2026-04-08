@@ -1,0 +1,28 @@
+farrel:
+  name: Farrel Augusta Dinata
+  title: Cognivio Founder
+  url: https://farrelad.github.io
+  image_url: https://github.com/FarrelAD.png
+  page: true
+  socials:
+    linkedin: farrelad
+    github: FarrelAD
+
+cakra:
+  name: Cakra Wangsa May Ahmad Widodo
+  title: Cognivio Founder
+  image_url: https://github.com/MiracleCakra.png
+  page: true
+  socials:
+    linkedin: cakra-wangsa-may-ahmad-widodo-08753b330
+    github: MiracleCakra
+
+vidi:
+  name: Vidi Joshubzky Saviola
+  title: Cognivio Founder
+  url: https://www.vjs-labs.tech/
+  image_url: https://github.com/TMTMPST.png
+  page: true
+  socials:
+    linkedin: vidi-joshubzky-saviola
+    github: TMTMPST
