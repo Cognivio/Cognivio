@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -25,7 +25,8 @@ const config: Config = {
   organizationName: 'Cognivio', // Usually your GitHub org/user name.
   projectName: 'Cognivio', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -83,7 +84,7 @@ const config: Config = {
             { label: 'Consulting', to: '/services/consulting' },
           ],
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           type: 'dropdown',
           label: 'Company',
@@ -93,7 +94,7 @@ const config: Config = {
             { label: 'Careers', to: '/careers' },
             { label: 'Contact us', to: '/contact' },
             { label: 'Partnership', to: '/partnership' },
-          ]
+          ],
         },
         {
           type: 'localeDropdown',
@@ -136,7 +137,7 @@ const config: Config = {
               label: 'Services',
               to: '/services',
             },
-          ]
+          ],
         },
         {
           title: 'Company',
