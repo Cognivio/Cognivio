@@ -1,0 +1,105 @@
+import React from 'react';
+import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
+import { TeamMemberCard, TimelineItem } from '@site/src/components/AboutComponents';
+
+<Head>
+  <style dangerouslySetInnerHTML={{ __html: `
+    .hero-gradient-about {
+      background: radial-gradient(circle at 30% 20%, rgba(229, 179, 81, 0.05) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+  `}} />
+</Head>
+
+<main className="bg-white text-slate-900 overflow-x-hidden pt-12">
+
+{/* Hero Section */}
+<section className="relative pt-16 md:pt-24 pb-16 px-6 hero-gradient-about overflow-hidden">
+  <div className="max-w-7xl mx-auto text-center">
+    <div className="inline-block px-4 py-1 bg-amber-50 border border-amber-100 rounded-full mb-8">
+      <span className="text-xs font-bold text-[#E5B351] uppercase tracking-[0.2em]">Our Story</span>
+    </div>
+    <h1 className="font-heading text-4xl md:text-7xl font-bold leading-[1.1] text-slate-900 mb-8 max-w-4xl mx-auto">
+      Pioneering the <span className="brand-gold italic">Cognitive Revolution.</span>
+    </h1>
+    <p className="text-xl text-slate-500 max-w-2xl leading-relaxed mx-auto">
+      Beyond algorithms, we build vision. Cognivio was founded on the belief that data should not just be processed, but understood with human-like intuition.
+    </p>
+  </div>
+</section>
+
+{/* Description Section */}
+<section className="py-20 px-6">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 className="heading-font text-3xl md:text-4xl font-bold mb-8 italic">Who We Are</h2>
+        <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+          <p>Cognivio is a research-driven AI and Data solutions firm. We specialize in transforming complex datasets into visible, actionable strategies using our proprietary Cognitive Vision technology. Our team blends deep technical expertise with a passion for building systems that actually make sense for the people using them.</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-6">
+        <div className="glass-card p-8 rounded-3xl border-l-4 border-l-[#E5B351]">
+          <h3 className="heading-font text-xl font-bold mb-4">Vision</h3>
+          <p className="text-sm text-slate-500 leading-relaxed">To empower every organization with human-centric artificial intelligence that sees beyond numbers.</p>
+        </div>
+        <div className="glass-card p-8 rounded-3xl border-l-4 border-l-slate-900 mt-8">
+          <h3 className="heading-font text-xl font-bold mb-4">Mission</h3>
+          <p className="text-sm text-slate-500 leading-relaxed">Bridging the gap between raw data and actionable wisdom through innovative cognitive technologies and strategic architectural design.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Team Section */}
+<section className="py-24 px-6 bg-slate-50">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="heading-font text-3xl md:text-4xl font-bold mb-6 italic">The Minds Behind Cognivio</h2>
+    <p className="text-slate-500 max-w-2xl mx-auto mb-16">Meet the visionaries, engineers, and strategists working to redefine the data landscape.</p>
+    
+    <div className="grid md:grid-cols-3 gap-8">
+      <TeamMemberCard name="Farrel Augusta Dinata" role="Data Analyst" image="https://github.com/FarrelAD.png" linkedin="https://linkedin.com/in/farrelad" github="https://github.com/FarrelAD" />
+      <TeamMemberCard name="Cakra Wangsa May Ahmad Widodo" role="Data Analyst" image="https://github.com/MiracleCakra.png" linkedin="https://linkedin.com/in/cakra-wangsa-may-ahmad-widodo" github="https://github.com/MiracleCakra" />
+      <TeamMemberCard name="Vidi Joshubzky Saviola" role="AI Engineer" image="https://github.com/TMTMPST.png" linkedin="https://linkedin.com/in/vidi-joshubzky-saviola" github="https://github.com/TMTMPST" />
+      <TeamMemberCard name="Muhammad Rifda Musyaffa" role="Data Engineer" image="https://github.com/MRifdaM.png" linkedin="https://linkedin.com/in/muhammad-rifda-musyaffa-01b8b6238" github="https://github.com/MRifdaM" />
+      <TeamMemberCard name="Hidayat Widi" role="AI Engineer" image="https://github.com/Raruu.png" linkedin="https://linkedin.com/in/raruu" github="https://github.com/Raruu" />
+    </div>
+  </div>
+</section>
+
+{/* Journey Section */}
+<section className="py-24 px-6 overflow-hidden">
+  <div className="max-w-7xl mx-auto">
+    <div className="flex flex-col lg:flex-row gap-20">
+      <div className="lg:w-1/2">
+        <div className="sticky top-32">
+          <h2 className="heading-font text-3xl md:text-4xl font-bold mb-6 italic">Our Journey</h2>
+          <p className="text-slate-500 text-lg mb-8">From a small research lab to a growing hub of AI innovation.</p>
+          <div className="w-24 h-1 bg-[#E5B351] rounded-full"></div>
+        </div>
+      </div>
+      <div className="lg:w-1/2">
+        <div className="space-y-8 md:space-y-4">
+          <TimelineItem year="2023" title="The Spark" description="Cognivio was founded as a boutique data research lab focusing on neural pattern recognition." />
+          <TimelineItem year="2024" title="Cognitive API v1" description="Launched our flagship Cognitive Vision API, allowing businesses to interpret visual data in real-time." />
+          <TimelineItem year="2025" title="Strategic Scaling" description="Expanded our operations across Southeast Asia and secured key partnerships in the Logistics and Fintech sectors." />
+          <TimelineItem year="2026" title="The Future" description='Continuing our pursuit of the "Beyond-Data" philosophy, building the next generation of intelligence-led ecosystems.' isLast={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Call to Action */}
+<section className="py-20 px-6 text-center">
+   <div className="max-w-4xl mx-auto p-12 bg-slate-900 rounded-[40px] text-white overflow-hidden relative">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#E5B351] opacity-10 rounded-full -mr-32 -mt-32"></div>
+      <h2 className="heading-font text-3xl font-bold mb-6 italic">Ready to see your data from a new perspective?</h2>
+      <a href="/contact" className="inline-flex px-8 py-4 bg-[#E5B351] text-slate-900 rounded-xl font-bold hover:bg-amber-400 transition-all">
+        Let's Talk
+      </a>
+   </div>
+</section>
+
+</main>

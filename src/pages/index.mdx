@@ -1,0 +1,89 @@
+import React from 'react';
+import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
+import { Hero } from '@site/src/components/Home/Hero';
+import { Services } from '@site/src/components/Home/Services';
+import { Vision } from '@site/src/components/Home/Vision';
+import { Partnership } from '@site/src/components/Home/Partnership';
+import { Contact } from '@site/src/components/Home/Contact';
+
+<Head>
+  <style dangerouslySetInnerHTML={{__html: `
+    .navbar { z-index: 100 !important; }
+  `}} />
+</Head>
+
+<main className="bg-white text-slate-900 overflow-x-hidden pt-12">
+
+<Hero 
+  tag="Smarter Data. Clearer Vision."
+  title={<>See Beyond the <br/><span className="brand-gold italic">Raw Data.</span></>}
+  description="Cognivio bridges the gap between complex information and actionable intelligence. We don't just process data; we provide the cognitive vision your business needs to scale."
+  startBtn="Start Your Transformation"
+  exploreBtn="Explore Solutions"
+  visionScoreLabel="VISION SCORE"
+  visionScoreValue="98%"
+  cognitiveFlowLabel="Cognitive Flow"
+/>
+
+<Services 
+  title="Empowering Decisions with Intelligent Vision"
+  description="We specialize in turning overwhelming data streams into precise, visual, and cognitive strategies."
+  s1={{
+    title: 'Intelligent Data Analytics',
+    description: 'Automate your reporting and discover hidden trends using our custom-built algorithmic models.',
+    list: ['Real-time Dashboards', 'Predictive Modeling']
+  }}
+  s2={{
+    title: 'Cognitive Vision AI',
+    description: 'Implementing computer vision and neural networks to help machines "see" and interpret your world.',
+    list: ['Object Recognition', 'Visual Pattern Analysis']
+  }}
+  s3={{
+    title: 'Digital Strategy Design',
+    description: "We don't just provide tech; we design the architecture for your digital future from the ground up.",
+    list: ['Ecosystem Mapping', 'Growth Automation']
+  }}
+/>
+
+<Vision 
+  activeLog="Transforming..."
+  title={<>Beyond "Data-Driven" to <span className="brand-gold italic">Intelligence-Led.</span></>}
+  description="In a world drowning in data, most companies are just trying to keep their heads above water. At Cognivio, we believe in using data as a lens to see clearly."
+  v1={{
+    title: 'Human-Centric Algorithms',
+    description: 'We build AI that understands the human context of your business.'
+  }}
+  v2={{
+    title: 'Agile Scalability',
+    description: 'Our solutions grow as your data volume increases, never missing a beat.'
+  }}
+/>
+
+<Partnership 
+  title="Let's Build the Future Together"
+  description="As a fast-moving AI & Data startup, we thrive on high-impact partnerships. Whether you're an established enterprise looking for a digital edge or a fellow innovator looking to collaborate, our doors are open."
+  p1={{
+    title: 'Early-Adopter Program',
+    description: 'Collaborate with us on custom pilot projects at preferential rates.'
+  }}
+  p2={{
+    title: 'Strategic Integration',
+    description: 'Integrate our Cognitive Vision API into your existing platform.'
+  }}
+  partnerSub="Open to Partnerships in:"
+/>
+
+<Contact 
+  title="Ready for clarity?"
+  description="Reach out today for a consultation on how we can transform your data landscape."
+  formName="Your Name"
+  formEmail="Email Address"
+  formDropdown="What solution are you looking for?"
+  formMsg="Message"
+  formBtn="Send Request"
+  placeholderName="John Doe"
+  placeholderMsg="How can we help you see clearly?"
+/>
+
+</main>

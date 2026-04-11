@@ -1,0 +1,84 @@
+import React from 'react';
+import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
+import { CareerRoleCard } from '@site/src/components/Home/CareersComponents';
+
+<Head>
+  <style dangerouslySetInnerHTML={{ __html: `
+    .hero-gradient-careers {
+      background: radial-gradient(circle at 70% 20%, rgba(229, 179, 81, 0.05) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+  `}} />
+</Head>
+
+<main className="bg-white text-slate-900 overflow-x-hidden pt-12">
+
+{/* Hero Section */}
+<section className="relative pt-16 md:pt-24 pb-16 px-6 hero-gradient-careers">
+  <div className="max-w-7xl mx-auto text-center">
+    <div className="inline-block px-4 py-1 bg-amber-50 border border-amber-100 rounded-full mb-8">
+      <span className="text-xs font-bold text-[#E5B351] uppercase tracking-[0.2em]">Careers</span>
+    </div>
+    <h1 className="font-heading text-4xl md:text-7xl font-bold leading-[1.1] text-slate-900 mb-8 max-w-4xl mx-auto">
+      Define the Future of <span className="brand-gold italic">Intelligence.</span>
+    </h1>
+    <p className="text-xl text-slate-500 max-w-2xl leading-relaxed mx-auto italic">
+      At Cognivio, we don't just build systems—we cultivate the minds that define the frontier of AI and Data Strategy. Join our world-class team of engineers and scientists.
+    </p>
+  </div>
+</section>
+
+{/* Roles Section */}
+<section className="py-24 px-6 bg-slate-50">
+  <div className="max-w-7xl mx-auto">
+    <div className="mb-20 text-center">
+      <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Open Positions</h2>
+      <p className="text-slate-500 max-w-xl text-lg mx-auto">Apply your expertise to solve the most complex challenges in data and cognitive intelligence.</p>
+    </div>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+      <CareerRoleCard title="Senior AI Researcher" category="Research" description="Lead the development of next-generation neural architectures and predictive vision systems for enterprise logistics." slug="ai-researcher" />
+      <CareerRoleCard title="Lead Data Scientist" category="Data Strategy" description="Architect scalable data intelligence pipelines and market sentiment engines for global financial partners." slug="data-scientist" />
+      <CareerRoleCard title="Fullstack Engineer (AI UI)" category="Engineering" description="Build premium, responsive interfaces that bring complex data intelligence to life for our world-class partners." slug="frontend-engineer" />
+    </div>
+  </div>
+</section>
+
+{/* Culture Section */}
+<section className="py-24 px-6">
+  <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12 text-center lg:text-left">
+    <div className="space-y-4">
+      <div className="w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto lg:mx-0">
+         <div className="w-6 h-6 bg-[#E5B351] rounded-lg"></div>
+      </div>
+      <h3 className="font-heading text-2xl font-bold">Radical Autonomy</h3>
+      <p className="text-slate-500 leading-relaxed">We trust our experts. You define your path and the technologies you use.</p>
+    </div>
+    <div className="space-y-4">
+      <div className="w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto lg:mx-0">
+         <div className="w-6 h-6 bg-[#E5B351] rounded-lg"></div>
+      </div>
+      <h3 className="font-heading text-2xl font-bold">Technical Excellence</h3>
+      <p className="text-slate-500 leading-relaxed">Work alongside global leaders in AI, Mathematics, and Strategic Intelligence.</p>
+    </div>
+    <div className="space-y-4">
+      <div className="w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto lg:mx-0">
+         <div className="w-6 h-6 bg-[#E5B351] rounded-lg"></div>
+      </div>
+      <h3 className="font-heading text-2xl font-bold">Global Impact</h3>
+      <p className="text-slate-500 leading-relaxed">Your code and models directly transform how the world's largest industries operate.</p>
+    </div>
+  </div>
+</section>
+
+{/* Call to Action */}
+<section className="py-24 px-6">
+  <div className="max-w-4xl mx-auto p-12 bg-slate-900 rounded-[40px] text-white text-center relative overflow-hidden shadow-2xl">
+      <div className="absolute top-0 left-0 w-64 h-64 bg-[#E5B351] opacity-10 rounded-full -ml-32 -mt-32"></div>
+      <h2 className="font-heading text-3xl font-bold mb-6 italic">Don't see a perfect fit?</h2>
+      <button className="px-8 py-4 bg-[#E5B351] text-slate-900 rounded-xl font-bold hover:bg-amber-400 transition-all hover:scale-105" onClick={() => alert('Send your application to careers@cognivio.org')}>
+        Send Open Application
+      </button>
+  </div>
+</section>
+
+</main>

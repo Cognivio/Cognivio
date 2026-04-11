@@ -100,6 +100,29 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Standing MDX pages in src/pages/ often have default constraints that limit 
+   marketing layouts. These overrides force them to full-width.
+*/
+html.mdx-page .main-wrapper main.container,
+html.plugin-pages .main-wrapper main.container {
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html.mdx-page .main-wrapper .row,
+html.plugin-pages .main-wrapper .row {
+  margin: 0 !important;
+}
+
+html.mdx-page .main-wrapper .col[class*='col--'],
+html.plugin-pages .main-wrapper .col[class*='col--'] {
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 @media (max-width: 996px) {
   .navbar {
     width: 95%;
