@@ -97,12 +97,12 @@ export default function Works(): React.ReactNode {
 
       <main className="bg-white text-slate-900 overflow-x-hidden pt-12">
         {/* Hero Section */}
-        <section className="relative pt-24 pb-16 px-6 hero-gradient-works overflow-hidden">
+        <section className="relative pt-16 md:pt-24 pb-16 px-6 hero-gradient-works overflow-hidden">
           <div className="max-w-7xl mx-auto text-center">
             <div className="inline-block px-4 py-1 bg-amber-50 border border-amber-100 rounded-full mb-8">
               <span className="text-xs font-bold text-[#E5B351] uppercase tracking-[0.2em]">{t.heroTag}</span>
             </div>
-            <h1 className="font-heading text-5xl md:text-7xl font-bold leading-[1.1] text-slate-900 mb-8 max-w-4xl mx-auto">
+            <h1 className="font-heading text-4xl md:text-7xl font-bold leading-[1.1] text-slate-900 mb-8 max-w-4xl mx-auto">
               {t.heroTitle}
             </h1>
             <p className="text-xl text-slate-500 max-w-2xl leading-relaxed mx-auto italic">
@@ -120,7 +120,7 @@ export default function Works(): React.ReactNode {
               <div className="w-24 h-1 bg-[#E5B351] rounded-full mt-6"></div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
               {t.projects.map((project, idx) => (
                 <ProjectCard key={idx} {...project} />
               ))}

@@ -138,10 +138,10 @@ export default function Home(): React.ReactNode {
                     </div>
                 </div>
                 
-                <div className="lg:w-1/2 relative">
+                <div className="lg:w-1/2 relative mt-16 lg:mt-0">
                     <div className="relative w-full aspect-square max-w-lg mx-auto">
                         <div className="absolute inset-0 bg-linear-to-t from-amber-100 to-transparent rounded-full opacity-20 floating"></div>
-                        <div className="absolute top-1/4 left-0 glass-card p-6 rounded-2xl w-48 shadow-xl floating" style={{animationDelay: "0.5s"}}>
+                        <div className="absolute top-1/4 left-0 glass-card p-6 rounded-2xl w-48 shadow-xl floating hidden lg:block" style={{animationDelay: "0.5s"}}>
                             <div className="h-2 w-12 bg-amber-400 rounded mb-4"></div>
                             <div className="space-y-2">
                                 <div className="h-2 w-full bg-slate-100 rounded"></div>
@@ -152,7 +152,7 @@ export default function Home(): React.ReactNode {
                                 <div className="text-lg font-bold brand-gold">98%</div>
                             </div>
                         </div>
-                        <div className="absolute bottom-1/4 right-0 glass-card p-6 rounded-2xl w-56 shadow-xl floating" style={{animationDelay: "1.2s"}}>
+                        <div className="absolute bottom-1/4 right-0 glass-card p-6 rounded-2xl w-56 shadow-xl floating hidden lg:block" style={{animationDelay: "1.2s"}}>
                             <div className="flex gap-2 mb-4">
                                 <div className="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center">
                                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -167,9 +167,9 @@ export default function Home(): React.ReactNode {
                             </div>
                         </div>
                         <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-64 h-64 bg-white shadow-[0_0_100px_rgba(229,179,81,0.1)] rounded-full flex items-center justify-center border border-amber-50">
-                                <img src="https://raw.githubusercontent.com/lucide-react/lucide/main/icons/eye.svg" className="w-24 h-24 opacity-5" alt=""/>
-                                <div className="absolute text-[120px] font-bold text-slate-50 select-none">AI</div>
+                            <div className="w-56 h-56 md:w-64 md:h-64 bg-white shadow-[0_0_100px_rgba(229,179,81,0.1)] rounded-full flex items-center justify-center border border-amber-50">
+                                <img src="https://raw.githubusercontent.com/lucide-react/lucide/main/icons/eye.svg" className="w-16 h-16 md:w-24 md:h-24 opacity-5" alt=""/>
+                                <div className="absolute text-[80px] md:text-[120px] font-bold text-slate-50 select-none">AI</div>
                             </div>
                         </div>
                     </div>

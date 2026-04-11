@@ -99,12 +99,12 @@ export default function About(): React.ReactNode {
 
       <main className="bg-white text-slate-900 overflow-x-hidden pt-12">
         {/* Hero Section */}
-        <section className="relative pt-24 pb-16 px-6 hero-gradient-about overflow-hidden">
+        <section className="relative pt-16 md:pt-24 pb-16 px-6 hero-gradient-about overflow-hidden">
           <div className="max-w-7xl mx-auto text-center">
             <div className="inline-block px-4 py-1 bg-amber-50 border border-amber-100 rounded-full mb-8">
               <span className="text-xs font-bold text-[#E5B351] uppercase tracking-[0.2em]">{t.heroTag}</span>
             </div>
-            <h1 className="heading-font text-5xl md:text-7xl font-bold leading-[1.1] text-slate-900 mb-8 max-w-4xl mx-auto">
+            <h1 className="font-heading text-4xl md:text-7xl font-bold leading-[1.1] text-slate-900 mb-8 max-w-4xl mx-auto">
               {t.heroTitle}
             </h1>
             <p className="text-xl text-slate-500 max-w-2xl leading-relaxed mx-auto">
@@ -163,7 +163,7 @@ export default function About(): React.ReactNode {
                 </div>
               </div>
               <div className="lg:w-1/2">
-                <div className="space-y-4">
+                <div className="space-y-8 md:space-y-4">
                   {t.journey.map((item, idx) => (
                     <TimelineItem 
                       key={idx} 

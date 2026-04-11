@@ -44,13 +44,13 @@ function BlogListPageContent({metadata, items}: Props): ReactNode {
       <main className="bg-white text-slate-900 pb-24 overflow-x-hidden pt-24 font-sans">
         {/* Abstract Floating Tags — English terms kept per design decision */}
         <div className="absolute inset-x-0 top-0 overflow-hidden h-[600px] pointer-events-none">
-          <div className="absolute -left-10 top-40 w-32 h-32 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "0s"}}>AI Tool</div>
-          <div className="absolute left-1/4 top-72 w-28 h-28 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "2s"}}>Data Analytics</div>
-          <div className="absolute left-10 top-[400px] w-24 h-24 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "1s"}}>Strategy</div>
+          <div className="absolute -left-10 top-40 w-32 h-32 rounded-full bg-white shadow-xl items-center justify-center text-xs font-bold text-slate-600 floating hidden lg:flex" style={{animationDelay: "0s"}}>AI Tool</div>
+          <div className="absolute left-1/4 top-72 w-28 h-28 rounded-full bg-white shadow-xl items-center justify-center text-xs font-bold text-slate-600 floating hidden lg:flex" style={{animationDelay: "2s"}}>Data Analytics</div>
+          <div className="absolute left-10 top-[400px] w-24 h-24 rounded-full bg-white shadow-xl items-center justify-center text-xs font-bold text-slate-600 floating hidden lg:flex" style={{animationDelay: "1s"}}>Strategy</div>
           
-          <div className="absolute right-10 top-32 w-20 h-20 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "1.5s"}}>Vision AI</div>
-          <div className="absolute right-1/4 top-60 w-32 h-32 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "0.5s"}}>Intelligence</div>
-          <div className="absolute right-20 top-96 w-24 h-24 rounded-full bg-white shadow-xl flex items-center justify-center text-xs font-bold text-slate-600 floating" style={{animationDelay: "2.5s"}}>Insights</div>
+          <div className="absolute right-10 top-32 w-20 h-20 rounded-full bg-white shadow-xl items-center justify-center text-xs font-bold text-slate-600 floating hidden lg:flex" style={{animationDelay: "1.5s"}}>Vision AI</div>
+          <div className="absolute right-1/4 top-60 w-32 h-32 rounded-full bg-white shadow-xl items-center justify-center text-xs font-bold text-slate-600 floating hidden lg:flex" style={{animationDelay: "0.5s"}}>Intelligence</div>
+          <div className="absolute right-20 top-96 w-24 h-24 rounded-full bg-white shadow-xl items-center justify-center text-xs font-bold text-slate-600 floating hidden lg:flex" style={{animationDelay: "2.5s"}}>Insights</div>
         </div>
 
         {/* Hero Area */}
