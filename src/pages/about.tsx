@@ -80,13 +80,13 @@ const content = {
 };
 
 export default function About(): React.ReactNode {
-  const { siteConfig, i18n } = useDocusaurusContext();
+  const { i18n } = useDocusaurusContext();
   const lang = (i18n.currentLocale || 'en') as 'en' | 'id';
   const t = content[lang] || content.en;
 
   return (
     <Layout
-      title={`About Us | ${siteConfig.title}`}
+      title="About Us"
       description="Learn more about Cognivio, our vision, mission, and the team behind our intelligent solutions.">
       {/* @ts-expect-error - React 19 type mapping issue with Docusaurus Head */}
       <Head>
