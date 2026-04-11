@@ -32,11 +32,11 @@ const content = {
     ],
 
     team: [
-      { name: 'Farrel Augusta Dinata', role: 'Data Analyst', image: '/img/team/ceo.png', linkedin: '#', github: '#' },
-      { name: 'Cakra Wangsa May Ahmad Widodo', role: 'Data Analyst', image: '/img/team/cto.png', linkedin: 'cakra-wangsa-may-ahmad-widodo', github: 'MiracleCakra' },
-      { name: 'Vidi Joshubzky Saviola', role: 'AI Engineer', image: '/img/team/lead_data.png', linkedin: 'vidi-joshubzky-saviola', github: 'TMTMPST' },
-      { name: 'Muhammad Rifda Musyaffa', role: 'Data Engineer', image: '/img/team/lead_data.png', linkedin: 'muhammad-rifda-musyaffa-01b8b6238', github: 'MRifdaM' },
-      { name: 'Hidayat Widi', role: 'AI Engineer', image: '/img/team/lead_data.png', linkedin: 'raruu', github: 'Raruu' }
+      { name: 'Farrel Augusta Dinata', role: 'Data Analyst', image: 'https://github.com/FarrelAD.png', linkedin: 'https://linkedin.com/in/farrelad', github: 'https://github.com/FarrelAD' },
+      { name: 'Cakra Wangsa May Ahmad Widodo', role: 'Data Analyst', image: 'https://github.com/MiracleCakra.png', linkedin: 'https://linkedin.com/in/cakra-wangsa-may-ahmad-widodo', github: 'https://github.com/MiracleCakra' },
+      { name: 'Vidi Joshubzky Saviola', role: 'AI Engineer', image: 'https://github.com/TMTMPST.png', linkedin: 'https://linkedin.com/in/vidi-joshubzky-saviola', github: 'https://github.com/TMTMPST' },
+      { name: 'Muhammad Rifda Musyaffa', role: 'Data Engineer', image: 'https://github.com/MRifdaM.png', linkedin: 'https://linkedin.com/in/muhammad-rifda-musyaffa-01b8b6238', github: 'https://github.com/MRifdaM' },
+      { name: 'Hidayat Widi', role: 'AI Engineer', image: 'https://github.com/Raruu.png', linkedin: 'https://linkedin.com/in/raruu', github: 'https://github.com/Raruu' }, 
     ]
   },
   id: {
