@@ -84,6 +84,7 @@ const config: Config = {
           ],
         },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/works', label: 'Works', position: 'left' },
         {
           type: 'dropdown',
           label: 'Company',
