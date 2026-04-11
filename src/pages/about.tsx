@@ -37,7 +37,9 @@ const content = {
       { name: 'Vidi Joshubzky Saviola', role: 'AI Engineer', image: 'https://github.com/TMTMPST.png', linkedin: 'https://linkedin.com/in/vidi-joshubzky-saviola', github: 'https://github.com/TMTMPST' },
       { name: 'Muhammad Rifda Musyaffa', role: 'Data Engineer', image: 'https://github.com/MRifdaM.png', linkedin: 'https://linkedin.com/in/muhammad-rifda-musyaffa-01b8b6238', github: 'https://github.com/MRifdaM' },
       { name: 'Hidayat Widi', role: 'AI Engineer', image: 'https://github.com/Raruu.png', linkedin: 'https://linkedin.com/in/raruu', github: 'https://github.com/Raruu' }, 
-    ]
+    ],
+    ctaTitle: 'Ready to see your data from a new perspective?',
+    ctaButton: "Let's Talk"
   },
   id: {
     heroTag: 'Cerita Kami',
@@ -66,10 +68,14 @@ const content = {
     ],
 
     team: [
-      { name: 'Alexander Thorne', role: 'Founder & CEO', image: '/img/team/ceo.png', linkedin: '#', github: '#' },
-      { name: 'Dr. Sarah Chen', role: 'Chief Technology Officer', image: '/img/team/cto.png', linkedin: '#', github: '#' },
-      { name: 'Marcus Lim', role: 'Lead Data Scientist', image: '/img/team/lead_data.png', linkedin: '#', github: '#' }
-    ]
+      { name: 'Farrel Augusta Dinata', role: 'Data Analyst', image: 'https://github.com/FarrelAD.png', linkedin: 'https://linkedin.com/in/farrelad', github: 'https://github.com/FarrelAD' },
+      { name: 'Cakra Wangsa May Ahmad Widodo', role: 'Data Analyst', image: 'https://github.com/MiracleCakra.png', linkedin: 'https://linkedin.com/in/cakra-wangsa-may-ahmad-widodo', github: 'https://github.com/MiracleCakra' },
+      { name: 'Vidi Joshubzky Saviola', role: 'AI Engineer', image: 'https://github.com/TMTMPST.png', linkedin: 'https://linkedin.com/in/vidi-joshubzky-saviola', github: 'https://github.com/TMTMPST' },
+      { name: 'Muhammad Rifda Musyaffa', role: 'Data Engineer', image: 'https://github.com/MRifdaM.png', linkedin: 'https://linkedin.com/in/muhammad-rifda-musyaffa-01b8b6238', github: 'https://github.com/MRifdaM' },
+      { name: 'Hidayat Widi', role: 'AI Engineer', image: 'https://github.com/Raruu.png', linkedin: 'https://linkedin.com/in/raruu', github: 'https://github.com/Raruu' }, 
+    ],
+    ctaTitle: 'Siap untuk melihat data Anda dari perspektif baru?',
+    ctaButton: 'Mari Berbicara'
   }
 };
 
@@ -175,9 +181,9 @@ export default function About(): React.ReactNode {
         <section className="py-20 px-6 text-center">
            <div className="max-w-4xl mx-auto p-12 bg-slate-900 rounded-[40px] text-white overflow-hidden relative">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#E5B351] opacity-10 rounded-full -mr-32 -mt-32"></div>
-              <h2 className="heading-font text-3xl font-bold mb-6 italic">Ready to see your data from a new perspective?</h2>
+              <h2 className="heading-font text-3xl font-bold mb-6 italic">{t.ctaTitle}</h2>
               <a href="/contact" className="inline-flex px-8 py-4 bg-[#E5B351] text-slate-900 rounded-xl font-bold hover:bg-amber-400 transition-all">
-                Let's Talk
+                {t.ctaButton}
               </a>
            </div>
         </section>
