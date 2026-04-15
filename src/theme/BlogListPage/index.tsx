@@ -41,7 +41,7 @@ function BlogListPageContent({metadata, items}: Props): ReactNode {
 
   return (
     <Layout title={metadata.blogTitle} description={metadata.blogDescription}>
-      <main className="bg-white text-slate-900 pb-24 overflow-x-hidden pt-24 font-sans">
+      <main className="bg-grid-pattern text-slate-900 pb-24 overflow-x-hidden pt-24 font-sans">
 
         {/* Hero Area */}
         <section className="relative text-center mx-auto max-w-4xl px-6 pt-16 pb-20 hero-gradient rounded-3xl z-10 mb-20">

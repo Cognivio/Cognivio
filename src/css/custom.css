@@ -264,3 +264,22 @@ html.plugin-pages .main-wrapper .col[class*='col--'] {
     gap: 0.5rem;
   }
 }
+.bg-grid-pattern,
+.blog-list-page,
+.blog-post-page {
+  position: relative;
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(rgba(229, 179, 81, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(229, 179, 81, 0.18) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center top;
+}
+
+@media (max-width: 768px) {
+  .bg-grid-pattern,
+  .blog-list-page,
+  .blog-post-page {
+    background-size: 30px 30px;
+  }
+}
