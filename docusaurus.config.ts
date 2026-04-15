@@ -78,9 +78,30 @@ const config: Config = {
           label: 'Services',
           position: 'left',
           items: [
-            { label: 'Data Solutions', to: '/services/data' },
-            { label: 'AI Integration', to: '/services/ai' },
-            { label: 'Consulting', to: '/services/consulting' },
+            { 
+              label: 'Data Solutions', 
+              to: '/services/data',
+              customProps: {
+                description: 'Transform complex data into actionable intelligent insights.',
+                icon: 'database'
+              }
+            },
+            { 
+              label: 'AI Integration', 
+              to: '/services/ai',
+              customProps: {
+                description: 'Empower your business with smart, custom AI agents.',
+                icon: 'brain'
+              }
+            },
+            { 
+              label: 'Consulting', 
+              to: '/services/consulting',
+              customProps: {
+                description: 'Strategic advisory for your digital and AI transformation.',
+                icon: 'chat'
+              }
+            },
           ],
         },
         { to: '/blog', label: 'Blog', position: 'left' },
@@ -90,10 +111,38 @@ const config: Config = {
           label: 'Company',
           position: 'left',
           items: [
-            { label: 'About us', to: '/about' },
-            { label: 'Careers', to: '/careers' },
-            { label: 'Contact us', to: '/contact' },
-            { label: 'Partnership', to: '/partnership' },
+            { 
+              label: 'About us', 
+              to: '/about',
+              customProps: {
+                description: 'Our mission and vision for the future of AI technology.',
+                icon: 'info'
+              }
+            },
+            { 
+              label: 'Careers', 
+              to: '/careers',
+              customProps: {
+                description: 'Join our team of creative innovators and tech experts.',
+                icon: 'briefcase'
+              }
+            },
+            { 
+              label: 'Contact us', 
+              to: '/contact',
+              customProps: {
+                description: 'Get in touch for collaborations, inquiries, or support.',
+                icon: 'mail'
+              }
+            },
+            { 
+              label: 'Partnership', 
+              to: '/partnership',
+              customProps: {
+                description: 'Expanding horizons together with our global partners.',
+                icon: 'users'
+              }
+            },
           ],
         },
         {
