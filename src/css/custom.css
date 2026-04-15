@@ -307,6 +307,8 @@ body.custom-cursor-active *::after {
   height: 100%;
   pointer-events: none;
   z-index: 99999;
+  mix-blend-mode: difference;
+  isolation: isolate;
 }
 
 .custom-cursor__dot {
