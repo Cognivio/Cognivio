@@ -1,0 +1,105 @@
+import React from 'react';
+import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
+import { TeamMemberCard, TimelineItem } from '@site/src/components/AboutComponents';
+
+<Head>
+  <style dangerouslySetInnerHTML={{ __html: `
+    .hero-gradient-about {
+      background: radial-gradient(circle at 30% 20%, rgba(229, 179, 81, 0.05) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+  `}} />
+</Head>
+
+<main className="bg-white text-slate-900 overflow-x-hidden pt-12">
+
+{/* Hero Section */}
+<section className="relative pt-16 md:pt-24 pb-16 px-6 hero-gradient-about overflow-hidden">
+  <div className="max-w-7xl mx-auto text-center">
+    <div className="inline-block px-4 py-1 bg-amber-50 border border-amber-100 rounded-full mb-8">
+      <span className="text-xs font-bold text-[#E5B351] uppercase tracking-[0.2em]">Cerita Kami</span>
+    </div>
+    <h1 className="font-heading text-4xl md:text-7xl font-bold leading-[1.1] text-slate-900 mb-8 max-w-4xl mx-auto">
+      Mempelopori <span className="brand-gold italic">Revolusi Kognitif.</span>
+    </h1>
+    <p className="text-xl text-slate-500 max-w-2xl leading-relaxed mx-auto">
+      Melampaui algoritma, kami membangun visi. Cognivio didirikan atas keyakinan bahwa data tidak hanya harus diproses, tetapi dipahami dengan intuisi mirip manusia.
+    </p>
+  </div>
+</section>
+
+{/* Description Section */}
+<section className="py-20 px-6">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 className="heading-font text-3xl md:text-4xl font-bold mb-8 italic">Siapa Kami</h2>
+        <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+          <p>Cognivio adalah firma solusi Data dan AI yang didorong oleh riset. Kami ahli dalam mengubah kumpulan data kompleks menjadi strategi yang terlihat dan dapat ditindaklanjuti menggunakan teknologi Cognitive Vision milik kami. Tim kami memadukan keahlian teknis yang mendalam dengan semangat untuk membangun sistem yang benar-benar masuk akal bagi orang yang menggunakannya.</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-6">
+        <div className="glass-card p-8 rounded-3xl border-l-4 border-l-[#E5B351]">
+          <h3 className="heading-font text-xl font-bold mb-4">Visi</h3>
+          <p className="text-sm text-slate-500 leading-relaxed">Memberdayakan setiap organisasi dengan kecerdasan buatan yang berpusat pada manusia yang mampu melihat melampaui angka.</p>
+        </div>
+        <div className="glass-card p-8 rounded-3xl border-l-4 border-l-slate-900 mt-8">
+          <h3 className="heading-font text-xl font-bold mb-4">Misi</h3>
+          <p className="text-sm text-slate-500 leading-relaxed">Menjembatani celah antara data mentah dan kebijaksanaan yang dapat ditindaklanjuti melalui teknologi kognitif inovatif dan desain arsitektur strategis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Team Section */}
+<section className="py-24 px-6 bg-slate-50">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="heading-font text-3xl md:text-4xl font-bold mb-6 italic">Pikiran di Balik Cognivio</h2>
+    <p className="text-slate-500 max-w-2xl mx-auto mb-16">Kenali para visioner, insinyur, dan strategis yang bekerja untuk mendefinisikan ulang lanskap data.</p>
+    
+    <div className="grid md:grid-cols-3 gap-8">
+      <TeamMemberCard name="Farrel Augusta Dinata" role="Data Analyst" image="https://github.com/FarrelAD.png" linkedin="https://linkedin.com/in/farrelad" github="https://github.com/FarrelAD" />
+      <TeamMemberCard name="Cakra Wangsa May Ahmad Widodo" role="Data Analyst" image="https://github.com/MiracleCakra.png" linkedin="https://linkedin.com/in/cakra-wangsa-may-ahmad-widodo" github="https://github.com/MiracleCakra" />
+      <TeamMemberCard name="Vidi Joshubzky Saviola" role="AI Engineer" image="https://github.com/TMTMPST.png" linkedin="https://linkedin.com/in/vidi-joshubzky-saviola" github="https://github.com/TMTMPST" />
+      <TeamMemberCard name="Muhammad Rifda Musyaffa" role="Data Engineer" image="https://github.com/MRifdaM.png" linkedin="https://linkedin.com/in/muhammad-rifda-musyaffa-01b8b6238" github="https://github.com/MRifdaM" />
+      <TeamMemberCard name="Hidayat Widi" role="AI Engineer" image="https://github.com/Raruu.png" linkedin="https://linkedin.com/in/raruu" github="https://github.com/Raruu" />
+    </div>
+  </div>
+</section>
+
+{/* Journey Section */}
+<section className="py-24 px-6 overflow-hidden">
+  <div className="max-w-7xl mx-auto">
+    <div className="flex flex-col lg:flex-row gap-20">
+      <div className="lg:w-1/2">
+        <div className="sticky top-32">
+          <h2 className="heading-font text-3xl md:text-4xl font-bold mb-6 italic">Perjalanan Kami</h2>
+          <p className="text-slate-500 text-lg mb-8">Dari laboratorium riset kecil menjadi pusat inovasi AI yang berkembang.</p>
+          <div className="w-24 h-1 bg-[#E5B351] rounded-full"></div>
+        </div>
+      </div>
+      <div className="lg:w-1/2">
+        <div className="space-y-8 md:space-y-4">
+          <TimelineItem year="2023" title="Percikan Awal" description="Cognivio didirikan sebagai laboratorium riset data butik yang berfokus pada pengenalan pola saraf." />
+          <TimelineItem year="2024" title="Cognitive API v1" description="Meluncurkan API Visi Kognitif andalan kami, memungkinkan bisnis untuk menginterpretasikan data visual secara real-time." />
+          <TimelineItem year="2025" title="Skalabilitas Strategis" description="Memperluas operasi kami di Asia Tenggara dan menjalin kemitraan utama di sektor Logistik dan Fintech." />
+          <TimelineItem year="2026" title="Masa Depan" description='Melanjutkan filosofi "Beyond-Data" kami, membangun ekosistem berbasis intelijen generasi berikutnya.' isLast={true} />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Call to Action */}
+<section className="py-20 px-6 text-center">
+   <div className="max-w-4xl mx-auto p-12 bg-slate-900 rounded-[40px] text-white overflow-hidden relative">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#E5B351] opacity-10 rounded-full -mr-32 -mt-32"></div>
+      <h2 className="heading-font text-3xl font-bold mb-6 italic">Siap untuk melihat data Anda dari perspektif baru?</h2>
+      <a href="/contact" className="inline-flex px-8 py-4 bg-[#E5B351] text-slate-900 rounded-xl font-bold hover:bg-amber-400 transition-all">
+        Mari Berbicara
+      </a>
+   </div>
+</section>
+
+</main>

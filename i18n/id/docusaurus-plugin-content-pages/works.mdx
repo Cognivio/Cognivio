@@ -1,0 +1,59 @@
+import React from 'react';
+import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
+import { ProjectCard } from '@site/src/components/WorksComponents';
+
+<Head>
+  <style dangerouslySetInnerHTML={{ __html: `
+    .hero-gradient-works {
+      background: radial-gradient(circle at 70% 20%, rgba(229, 179, 81, 0.05) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+  `}} />
+</Head>
+
+<main className="bg-white text-slate-900 overflow-x-hidden pt-12">
+
+{/* Hero Section */}
+<section className="relative pt-16 md:pt-24 pb-16 px-6 hero-gradient-works overflow-hidden">
+  <div className="max-w-7xl mx-auto text-center">
+    <div className="inline-block px-4 py-1 bg-amber-50 border border-amber-100 rounded-full mb-8">
+      <span className="text-xs font-bold text-[#E5B351] uppercase tracking-[0.2em]">Portofolio</span>
+    </div>
+    <h1 className="font-heading text-4xl md:text-7xl font-bold leading-[1.1] text-slate-900 mb-8 max-w-4xl mx-auto">
+      Inovasi dalam <span className="brand-gold italic">Aksi.</span>
+    </h1>
+    <p className="text-xl text-slate-500 max-w-2xl leading-relaxed mx-auto italic">
+      Menjelajahi batas kecerdasan. Berikut adalah beberapa solusi strategis yang telah kami bangun untuk mentransformasi lanskap digital bagi mitra kami.
+    </p>
+  </div>
+</section>
+
+{/* Projects Grid Section */}
+<section className="py-24 px-6">
+  <div className="max-w-7xl mx-auto">
+    <div className="mb-20">
+      <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Proyek Unggulan</h2>
+      <p className="text-slate-500 max-w-xl text-lg">Temukan bagaimana kami membantu bisnis berkembang dengan AI kustom, Analitik Data, dan Intelijen Strategis.</p>
+      <div className="w-24 h-1 bg-[#E5B351] rounded-full mt-6"></div>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+      <ProjectCard title="Logistik NeuralPath" category="AI Logistik" description="Mengoptimalkan rute pengiriman yang kompleks dan memprediksi hambatan rantai pasokan menggunakan visi prediktif real-time dan pengenalan pola saraf." image="/img/projects/logistics.png" slug="logistics-ai" />
+      <ProjectCard title="Keuangan Vanguard" category="Analitik Fintech" description="Mesin intelijen berkinerja tinggi untuk deteksi penipuan real-time dan analisis sentimen pasar, memproses jutaan transaksi setiap hari." image="/img/projects/fintech.png" slug="fintech-analytics" />
+      <ProjectCard title="Ritel Lumina" category="Visi Komputer" description="Pelacakan perilaku pelanggan di toko yang canggih dan pembuatan peta panas untuk mengoptimalkan penempatan produk dan meningkatkan keterlibatan pembeli." image="/img/projects/retail.png" slug="retail-cv" />
+    </div>
+  </div>
+</section>
+
+{/* Call to Action */}
+<section className="py-20 px-6 text-center">
+   <div className="max-w-4xl mx-auto p-12 bg-slate-900 rounded-[40px] text-white overflow-hidden relative shadow-2xl">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#E5B351] opacity-10 rounded-full -mr-32 -mt-32"></div>
+      <h2 className="font-heading text-3xl font-bold mb-6 italic">Punya proyek dalam pikiran?</h2>
+      <a href="/contact" className="inline-flex px-8 py-4 bg-[#E5B351] text-slate-900 rounded-xl font-bold hover:bg-amber-400 transition-all hover:scale-105">
+        Mari Berkolaborasi
+      </a>
+   </div>
+</section>
+
+</main>
