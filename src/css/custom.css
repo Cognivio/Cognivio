@@ -103,20 +103,23 @@
 /* Standing MDX pages in src/pages/ often have default constraints that limit 
    marketing layouts. These overrides force them to full-width.
 */
-html.mdx-page .main-wrapper main.container,
-html.plugin-pages .main-wrapper main.container {
+html.mdx-page .main-wrapper main,
+html.plugin-pages .main-wrapper main,
+.main-wrapper > main {
   max-width: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 html.mdx-page .main-wrapper .row,
-html.plugin-pages .main-wrapper .row {
+html.plugin-pages .main-wrapper .row,
+.main-wrapper .row {
   margin: 0 !important;
 }
 
 html.mdx-page .main-wrapper .col[class*='col--'],
-html.plugin-pages .main-wrapper .col[class*='col--'] {
+html.plugin-pages .main-wrapper .col[class*='col--'],
+.main-wrapper .col[class*='col--'] {
   max-width: 100% !important;
   flex-basis: 100% !important;
   padding: 0 !important;
@@ -262,5 +265,97 @@ html.plugin-pages .main-wrapper .col[class*='col--'] {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+}
+.bg-grid-pattern,
+.blog-list-page,
+.blog-post-page {
+  position: relative;
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(rgba(229, 179, 81, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(229, 179, 81, 0.18) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center top;
+}
+
+@media (max-width: 768px) {
+  .bg-grid-pattern,
+  .blog-list-page,
+  .blog-post-page {
+    background-size: 30px 30px;
+  }
+}
+
+/* Custom Cursor Styles */
+html.custom-cursor-active,
+html.custom-cursor-active *,
+html.custom-cursor-active *::before,
+html.custom-cursor-active *::after,
+body.custom-cursor-active,
+body.custom-cursor-active *,
+body.custom-cursor-active *::before,
+body.custom-cursor-active *::after {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 99999;
+  mix-blend-mode: difference;
+  isolation: isolate;
+}
+
+.custom-cursor__dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #E5B351; /* Cognivio gold */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+  z-index: 99999;
+}
+
+.custom-cursor__ring {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #E5B351;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  z-index: 99998;
+}
+
+/* Hover States */
+.custom-cursor--hover .custom-cursor__dot {
+  width: 12px;
+  height: 12px;
+  background-color: #E5B351;
+}
+
+.custom-cursor--hover .custom-cursor__ring {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(229, 179, 81, 0.1);
+  border-color: rgba(229, 179, 81, 0.5);
+}
+
+/* Click State */
+.custom-cursor--clicking .custom-cursor__ring {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(229, 179, 81, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .custom-cursor {
+    display: none;
   }
 }
